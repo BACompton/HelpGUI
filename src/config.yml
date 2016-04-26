@@ -1,0 +1,154 @@
+representationMenu:
+  name: "&8HelpGUI's Representaion"
+  nonPlayerMessage: "&eThis command can only be ran by a Player"
+recipeMenu:
+  enable: true
+  name: "&8Recipe Menu"
+  recipeName: "Recipe Overview for %displayName%"
+  rows: 6
+helpMenu:
+ name: "&8Help Menu"
+ rows: 6
+ nonPlayerMessage: "&eThis command can only be ran by a Player"
+
+base:
+  Essentials:
+    commands:
+      fly:
+        permission: essentials.fly
+        description: Test description
+        usage: /<command>
+        aliases: []
+  PermissionsEx:
+    permissions:
+      prefix:
+        description: Prefix
+        children: []
+    aliases: ["groups", "group", "prefix", "suffix", "modifyworld"]
+  bukkit:
+    name: Bukkit
+    description: All commands from Bukkit.
+    aliases: ["craftbukkit", "spigot"]
+  minecraft:
+    name: Minecraft
+    description: All commands from vanilla Minecraft.
+    aliases: ["minecraft"]
+  unknown:
+    name: Unknow Plugin
+    description: Place were unregistered commands and unknown permissions are stored
+    aliases: []
+
+representation:
+  plugin:
+    overview:
+      material: STAINED_GLASS_PANE
+      data: 10
+      nameColorCode: "&5"
+      loreColorCode: "&d"
+      loreLineLength: 35
+      overview: "Click to go to %name%'s detailed view."
+    name:
+      material: STAINED_GLASS_PANE
+      data: 10
+      nameColorCode: "&5"
+    description:
+      material: STAINED_GLASS_PANE
+      data: 2
+      loreColorCode: "&d"
+      loreLineLength: 35
+  command:
+    overview:
+      material: STAINED_GLASS_PANE
+      data: 11
+      nameColorCode: "&1"
+      loreColorCode: "&9"
+      loreLineLength: 35
+      overview: "Click to go to %name%'s detailed view."
+    name:
+      material: STAINED_GLASS_PANE
+      data: 11
+      nameColorCode: "&1"
+    description:
+      material: STAINED_GLASS_PANE
+      data: 3
+      loreColorCode: "&9"
+      loreLineLength: 35
+    alias:
+      material: STAINED_GLASS_PANE
+      data: 9
+      nameColorCode: "&3"
+  permission:
+    overview:
+      material: STAINED_GLASS_PANE
+      data: 13
+      name: No Required Permission
+      nameColorCode: "&2"
+      lineColorCode: "&a"
+      overview: "Click to go to %name%'s detailed view."
+    name:
+      material: STAINED_GLASS_PANE
+      data: 13
+      nameColorCode: "&2"
+    description:
+      material: STAINED_GLASS_PANE
+      data: 5
+      loreColorCode: "&a"
+      loreLineLength: 35
+    child:
+      material: STAINED_GLASS_PANE
+      data: 4
+      nameColorCode: "&6"
+      loreColorCode: "&e"
+      loreLineLength: 35
+  recipe:
+    shapeless:
+      material: STAINED_GLASS_PANE
+      data: 14
+      nameColorCode: "&4"
+      loreColorCode: "&c"
+      loreLineLength: 35
+    shaped:
+      material: STAINED_GLASS_PANE
+      data: 4
+      nameColorCode: "&6"
+      loreColorCode: "&e"
+      loreLineLength: 35
+    furnace:
+      material: STAINED_GLASS_PANE
+      data: 8
+      nameColorCode: "&8"
+      loreColorCode: "&7"
+      loreLineLength: 35
+  button:
+    nextPage:
+      material: INK_SACK
+      data: 6
+      name: "Next Page"
+      nameColorCode: "&3"
+      lore: "Click to go to the Next page."
+      loreColorCode: "&b"
+      loreLineLength: 35
+    previousPage:
+      material: INK_SACK
+      data: 12
+      name: "Previous Page"
+      nameColorCode: "&3"
+      lore: "Click to go to the previous page."
+      loreColorCode: "&b"
+      loreLineLength: 35
+    previousMenu:
+      material: INK_SACK
+      data: 1
+      name: "Previous Menu"
+      nameColorCode: "&4"
+      lore: "Click to go to the previous Menu"
+      loreColorCode: "&c"
+      loreLineLength: 35
+    filler:
+      material: STAINED_GLASS_PANE
+      data: 7
+      name: " "
+    fillerMenu:
+      material: STAINED_GLASS_PANE
+      data: 15
+      name: " "

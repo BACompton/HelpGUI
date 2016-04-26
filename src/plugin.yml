@@ -1,0 +1,45 @@
+name: HelpGUI
+version: 1.0
+author: D3ath5643
+description: HelpGUI creates help menu with a user interface where register commands and permission nodes can be examined
+main: d3ath5643.HelpGUI.Main
+
+commands:
+  helpgui:
+    description: Command to open the help user interface
+    usage: /<command> [search]
+    permission: HelpGUI.command.helpgui
+    permission-message: You do not have permission to use the graphical interface of help!
+  helpguireload:
+    description: Command to reload HelpGUI
+    usage: /<command>
+    permission: HelpGUI.command.reload
+    permission-message: You do not have permission to reload HelpGUI!
+    aliases: ["hguireload"]
+  helpguirepresentation:
+    description: Displays what each item stack used by HelpGUI represents
+    usage: /<command>
+    permission: HelpGUI.command.representation
+    permission-message: You do not have permission to us this command
+    aliases: ["hguirepresentation", "helprepresentation"]
+  
+permissions:
+  HelpGUI.*:
+    description: Gives access to all HelpGUI's commands and abilities
+    children:
+      HelpGUI.command.*: true
+  HelpGUI.command.*:
+    description: Gives access to all commands in HelpGUI
+    children:
+      HelpGUI.command.helpgui: true
+      HelpGUI.command.reload: true
+      HelpGUI.command.representation: true
+  HelpGUI.command.helpgui:
+    description: Gives access to the helpgui command
+    default: op
+  HelpGUI.command.reload:
+    description: Gives access to the reload command for HelpGUI
+    default: op
+  HelpGUI.command.representation:
+    description: Gives access to the representation command for HelpGUI
+    default: op
